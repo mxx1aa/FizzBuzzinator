@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1,
+h2 {
+  color: rgb(216, 107, 183);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-text-stroke: 8px #26183a;
+  paint-order: stroke fill;
+}
+
+header {
+  // background-repeat: repeat-x;
+  // background-size: ???;
+  background: url('/fizzbuzzemojis3.png');
+  background-color: #26183a;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+//#0f0024
+
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  height: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  grid-template-rows: 1fr 1fr;
+}
+
+.fizz-labels {
+  display: grid;
+  gap: 0.5rem;
+}
+
+unfizzed,
+fizzed {
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 1rem;
+  color: #d9d9d9;
+}
+
+unfizzed {
+  background-color: #26183a;
+}
+
+fizzed {
+  background-color: #26183a;
+}
+
+@media screen and (min-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}

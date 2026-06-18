@@ -1,0 +1,13 @@
+<header>
+  <h1>FizzBuzzinator v2.0</h1>
+  <h2>Fulfill your FizzBuzzing dreams!</h2>
+</header>
+<main>
+  <div class="grid-container">
+    <unfizzed (invalid)="getInvalidResponse($event)" (unfizzedValue)="updateFizzingValue($event)"></unfizzed>
+    <fizzed [fizzedValue]="fizzedValue()"></fizzed>
+  </div>
+</main>
+<footer>
+  <status [invalidMessage]="invalid()"></status>
+</footer>
