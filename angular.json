@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "angular-fizzbuzz": {
+    "FizzBuzzinator": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -59,10 +59,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-fizzbuzz:build:production"
+              "buildTarget": "FizzBuzzinator:build:production"
             },
             "development": {
-              "buildTarget": "angular-fizzbuzz:build:development"
+              "buildTarget": "FizzBuzzinator:build:development"
             }
           },
           "defaultConfiguration": "development"
